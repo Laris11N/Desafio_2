@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dados_Ubuntu", "Dados_Ubuntu\Dados_Ubuntu.csproj", "{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B8364FA-2E78-4882-B9EA-728CFF098112}
+	EndGlobalSection
+EndGlobal
