@@ -1,25 +1,125 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32228.343
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dados_Ubuntu", "Dados_Ubuntu\Dados_Ubuntu.csproj", "{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AE46BDA-5F81-478E-84DC-3CD042E4D5E5}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2B8364FA-2E78-4882-B9EA-728CFF098112}
-	EndGlobalSection
-EndGlobal
+using System;
+
+namespace Dados_Ubuntu
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //nome, idade, peso, altura, bool dev 
+
+
+            string Nome1 = "Larissa Nery";
+            int Idade1 = 23;
+            double Peso1 = 60;
+            double altura1 = 1.63;
+            bool Dev1 = true;
+
+            string Nome2 = "Brunna Silva";
+            int Idade2 = 24;
+            double Peso2 = 55;
+            double altura2 = 1.67;
+            bool Dev2 = true;
+
+            string Nome3 = "Eliel Silva";
+            int Idade3 = 28;
+            double Peso3 = 56;
+            double altura3 = 1.75;
+            bool Dev3 = false;
+
+            string Nome4 = "Marcio Victoria";
+            int Idade4 = 44;
+            double Peso4 = 85;
+            double altura4 = 1.79;
+            bool Dev4 = false; 
+            Console.ReadLine();
+
+            //nome dos Ubuntus
+            Console.WriteLine("O nome dos Ubuntus é: " + Nome1 + "," + Nome2 + "," + Nome3 + " e " + Nome4);
+            //Ubuntus Silva
+            Console.WriteLine("Ubuntus com nome Silva: " + Nome2 + " e " + Nome3);
+
+            //Soma idade 
+            int IdadesTotais = Idade1 + Idade2 + Idade3 + Idade4; 
+            Console.WriteLine("A soma da idade de todos Ubuntus é: " + IdadesTotais);
+          
+            // imc- (18,5 abaixo) - 18,5 a 24,9 normal - (25 a  29,9 sobrepeso)
+            // - 30 a 34,34.9- obesidade Grau 1
+
+            //imc Larissa
+            double Imc1 = Peso1 / (altura1 * altura1);
+            if (Imc1 < 18.5)
+            {
+                Console.WriteLine(Nome1 + ": Peso abaixo do ideal");
+            }
+            else if (Imc1 > 18.5 & Imc1 < 25)
+            {
+                Console.WriteLine(Nome1 + ": Peso ideal");
+            }
+            else if (Imc1 > 25 & Imc1 < 30)
+            {
+                Console.WriteLine(Nome1 + ": Acima do peso ideial");
+
+            }
+            //Imc Bruna
+            double Imc2 = Peso2 / (altura2 * altura2);
+            if (Imc2 < 18.5)
+            {
+                Console.WriteLine(Nome2 + ": Peso abaixo do ideal");
+            }
+            else if (Imc2 > 18.5 & Imc2 < 25)
+            {
+                Console.WriteLine(Nome2 + ": Peso ideal");
+            }
+            else if (Imc2 > 25 & Imc2 < 30)
+            {
+                Console.WriteLine(Nome2 + ": Acima do peso ideial");
+
+            }
+
+            //Imc Eliel
+            double Imc3 = Peso3 / (altura3 * altura3);
+            if (Imc3 < 18.5)
+            {
+                Console.WriteLine(Nome3 + ": Peso abaixo do ideal");
+            }
+            else if (Imc3 > 18.5 & Imc3 < 25)
+            {
+                Console.WriteLine(Nome3 + ": Peso ideal");
+            }
+            else if (Imc3 > 25 & Imc3 < 30)
+            {
+                Console.WriteLine(Nome3 + ": Acima do peso ideial");
+
+            }
+            //Imc Marcio
+            double Imc4 = Peso4 / (altura4 * altura4);
+            if (Imc4 < 18.5)
+            {
+                Console.WriteLine(Nome4 + ": Peso abaixo do ideal");
+            }
+            else if (Imc4 > 18.5 & Imc4 < 25)
+            {
+                Console.WriteLine(Nome4 + ": Peso ideal");
+            }
+            else if (Imc4 > 25 & Imc4 < 30)
+            {
+                Console.WriteLine(Nome4 + ": Acima do peso ideial");
+
+            }
+
+            // Quais são Dev
+            Console.WriteLine( Nome1 + " É um Dev : " + Dev1);
+
+            Console.WriteLine(Nome2 + " É um Dev : " + Dev2);
+
+            Console.ReadLine();
+           
+        }
+    }
+}
+//T1- somar idades - ok
+//T2- agrupar nomes - ok
+//T3 - calcular IMC - ok
+//T4- quantos são Dev- mais ou menos
+//T5- Exibir Ubuntu com nome Silva - ok 
